@@ -1,5 +1,5 @@
 # GLpp
-OpenGL C++ wrapper
+OpenGL C++17 wrapper
 
 ## Dependency Library
 - GLEW
