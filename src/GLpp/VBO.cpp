@@ -1,11 +1,10 @@
-#include "pch.h"
-#include "VBO.h"
+#include "OpenGL.h"
 
+#include "VBO.h"
 #include "VAO.h"
 namespace glpp {
 	VBO::VBO()
 	{
-
 		glGenBuffers(1, &vbo);
 	}
 	VBO::VBO(const VBO& vbo)

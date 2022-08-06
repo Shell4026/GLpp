@@ -1,7 +1,10 @@
-#include "pch.h"
+#include "OpenGL.h"
 #include "Program.h"
 
 #include "Shader.h"
+
+#include <vector>
+#include <string>
 namespace glpp
 {
 	Program::Program()

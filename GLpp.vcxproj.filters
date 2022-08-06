@@ -15,51 +15,48 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Program.cpp">
+    <ClCompile Include="src\GLpp\VAO.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
+    <ClCompile Include="src\GLpp\VBO.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="VAO.cpp">
+    <ClCompile Include="src\GLpp\Context.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="src\GLpp\Program.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Context.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="VBO.cpp">
+    <ClCompile Include="src\GLpp\Shader.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="VAO.h">
+    <ClInclude Include="include\GLpp\Program.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="VBO.h">
+    <ClInclude Include="include\GLpp\Shader.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Types.h">
+    <ClInclude Include="include\GLpp\Types.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="glSingleton.hpp">
+    <ClInclude Include="include\GLpp\VAO.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="include\GLpp\VBO.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="GLpp.h">
+    <ClInclude Include="include\GLpp\Context.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Context.h">
+    <ClInclude Include="include\GLpp\GLpp.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Program.h">
+    <ClInclude Include="include\GLpp\glSingleton.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
+    <ClInclude Include="include\GLpp\OpenGL.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

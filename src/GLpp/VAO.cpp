@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "OpenGL.h"
 #include "VAO.h"
 
 namespace glpp{

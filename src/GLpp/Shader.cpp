@@ -1,10 +1,13 @@
-#include "pch.h"
+#include "OpenGL.h"
 #include "Shader.h"
 
+#include <vector>
+#include <string>
 namespace glpp
 {
 	Shader::Shader()
-		:type(VERTEX_SHADER)
+		:type(VERTEX_SHADER),
+		shader(0)
 	{
 	}
 	Shader::Shader(shader_type type)
