@@ -1,5 +1,5 @@
 # GLpp
-OpenGL C++17 wrapper
+OpenGL C++17 wrapper\n
 Platform: Window, Android
 
 ## Dependency Library
