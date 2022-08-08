@@ -45,6 +45,20 @@ namespace glpp {
 		glBufferSubData(GL_ARRAY_BUFFER, length, offset, data);
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 	}
+	auto VBO::Create() -> void
+	{
+		if (vbo != 0)
+			Destroy();
+		glGenBuffers(1, &vbo);
+	}
+	auto VBO::Destroy() -> void
+	{
+		if (vbo == 0)
+			return;
+
+		glDeleteBuffers(1, &vbo);
+		vbo = 0;
+	}
 	VBO::operator GLuint() const
 	{
 		return vbo;

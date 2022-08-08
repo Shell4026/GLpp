@@ -34,10 +34,13 @@ namespace glpp {
 
 		~VBO();
 
-		auto BindAttribute(GLint attrib, const VAO& vao, glpp::Type type, GLuint count, GLuint stride = 0, size_t offset = 0)->void;
+		void BindAttribute(GLint attrib, const VAO& vao, glpp::Type type, GLuint count, GLuint stride = 0, size_t offset = 0);
 
-		auto SetData(const void* data, size_t length, buffer_usage usage, buffer_type type = buffer_type::Array)->void;
+		void SetData(const void* data, size_t length, buffer_usage usage, buffer_type type = buffer_type::Array);
 		void SubSetData(const void* data, size_t offset, size_t length);
+
+		void Create();
+		void Destroy();
 		operator GLuint() const;
 	};
 }

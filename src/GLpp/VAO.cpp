@@ -4,7 +4,6 @@
 namespace glpp{
 	VAO::VAO()
 	{
-		
 		glGenVertexArrays(1, &vao);
 	}
 
@@ -47,8 +46,21 @@ namespace glpp{
 	{
 		glBindVertexArray(vao);
 	}
-	auto VAO::UnBind() const -> void
+	void VAO::UnBind() const
 	{
 		glBindVertexArray(0);
+	}
+	void VAO::Create()
+	{
+		if (vao != 0)
+			Destroy();
+		glGenVertexArrays(1, &vao);
+	}
+	void VAO::Destroy()
+	{
+		if (vao == 0)
+			return;
+		glDeleteVertexArrays(1, &vao);
+		vao = 0;
 	}
 }

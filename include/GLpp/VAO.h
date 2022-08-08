@@ -16,6 +16,9 @@ namespace glpp {
 		void operator=(VAO&& vao) noexcept;
 
 		void Bind() const;
-		auto UnBind() const -> void;
+		void UnBind() const;
+
+		void Create();
+		void Destroy();
 	};
 }
