@@ -9,8 +9,7 @@ namespace glpp{
 
 	VAO::~VAO()
 	{
-		if (vao != 0)
-			glDeleteVertexArrays(1, &vao);
+		Destroy();
 	}
 
 	VAO::VAO(const VAO& vao)
@@ -52,8 +51,7 @@ namespace glpp{
 	}
 	void VAO::Create()
 	{
-		if (vao != 0)
-			Destroy();
+		Destroy();
 		glGenVertexArrays(1, &vao);
 	}
 	void VAO::Destroy()

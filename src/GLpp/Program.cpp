@@ -27,7 +27,21 @@ namespace glpp
 
 	Program::~Program()
 	{
+		Destroy();
+	}
+
+	void Program::Create()
+	{
+		Destroy();
+		program = glCreateProgram();
+	}
+
+	void Program::Destroy()
+	{
+		if (program == 0)
+			return;
 		glDeleteProgram(program);
+		program = 0;
 	}
 
 	auto Program::SetNativeHandle(GLuint program) -> void

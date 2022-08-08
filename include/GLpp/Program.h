@@ -16,12 +16,16 @@ namespace glpp
 	private:
 		GLuint program;
 
+
 		const Shader* vert;
 		const Shader* frag;
 	public:
 		Program();
 		Program(const Shader& vert, const Shader& frag);
 		~Program();
+
+		void Create();
+		void Destroy();
 
 		auto SetNativeHandle(GLuint program)->void;
 

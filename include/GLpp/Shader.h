@@ -22,6 +22,9 @@ namespace glpp
 		Shader(shader_type type);
 		~Shader();
 
+		void Create();
+		void Destroy();
+
 		operator GLuint() const;
 
 		auto SetShaderType(shader_type type)->void;

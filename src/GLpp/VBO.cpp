@@ -18,7 +18,7 @@ namespace glpp {
 	}
 	VBO::~VBO()
 	{
-		glDeleteBuffers(1, &vbo);
+		Destroy();
 	}
 	auto VBO::SetData(const void* data, size_t length, buffer_usage usage, buffer_type type)->void
 	{
@@ -47,8 +47,7 @@ namespace glpp {
 	}
 	auto VBO::Create() -> void
 	{
-		if (vbo != 0)
-			Destroy();
+		Destroy();
 		glGenBuffers(1, &vbo);
 	}
 	auto VBO::Destroy() -> void
